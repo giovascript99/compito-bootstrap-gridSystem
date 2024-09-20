@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Selfwork Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand text-warning" href="#">Fullstack Cinema</a>
+            <button class="navbar-toggler text-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" aria-current="page" href="#">Film</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" href="#">Orari</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" href="#">Dove siamo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        
+        <header class="bg-secondary d-flex justify-content-center align-items-center">
+            <h1 class="display-1 text-warning">Fullstack Cinema</h1>
+        </header>
+        
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-sm d-flex justify-content-center py-3">
+                    <div class="card" style="width: 18rem;">
+                        <a href="https://www.rottentomatoes.com/m/marvels_the_avengers" target="_blank"><img src="./media/Avengers.jpg" class="card-img-top" alt="Avengers">
+                        <div class="card-body"></a>
+                            <h5 class="card-title">Avengers</h5>
+                            <p class="card-text">Iron Man, Thor, Capitan America, Vedova Nera e Occhio di Falco uniti per affrontare Thanos.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm d-flex justify-content-center py-3">
+                    <div class="card" style="width: 18rem;">
+                        <a href="https://www.rottentomatoes.com/m/harry_potter_and_the_sorcerers_stone" target="_blank"><img src="./media/Harry Potter.jpg" class="card-img-top" alt="Harry Potter"></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Harry Potter</h5>
+                            <p class="card-text">Harry Potter riceve una lettera per una scuola di magia e scopre che i suoi genitori facevano parte di un ordine magico.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm d-flex justify-content-center py-3">
+                    <div class="card" style="width: 18rem;">
+                        <a href="https://www.rottentomatoes.com/m/it_chapter_two" target="_blank"><img src="./media/IT.jpg" class="card-img-top" alt="IT Capitolo 2"></a>
+                        <div class="card-body">
+                            <h5 class="card-title">IT - Capitolo 2</h5>
+                            <p class="card-text">I quattro giovani protagonisti di It sono chiamati nuovamente a confrontarsi con la peggiore delle loro paure: Pennywise.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <aside class="pt-5 text-warning">
+        <form class="container">
+            <div class="text-center pb-3">
+                <h2>Lavora con noi</h2>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-6">
+                    <label for="staticEmail2" class="visually-hidden">Email</label>
+                    <input type="email" class="form-control" placeholder="email@example.com">
+                </div>
+                <div class="col-6">
+                    <label for="inputPassword2" class="visually-hidden">Password</label>
+                    <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                </div>
+                <div class="col-auto pt-3">
+                    <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#modalWork">Invia</button>
+                </div>
+            </div>
+        </form>
+    </aside>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="modalWork" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" id="modal">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Grazie per averci contattato!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Abbiamo inviato una mail alla tua posta elettronica.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="d-flex justify-content-around pt-3 bg-dark text-light">
+        <section>
+            <h5>P.IVA</h5>
+            <p>1234567890</p>
+        </section>
+        <section>
+            <h5>Chi siamo</h5>
+            <p>Scopri di più!</p>
+        </section>
+        <section>
+            <h5>Social</h5>
+            <ul>
+                <li><i class="bi bi-facebook"></i>Facebook</li>
+                <li><i class="bi bi-instagram"></i>Instagram</li>
+                <li><i class="bi bi-twitter-x"></i>Twitter-X</li>
+                <li><i class="bi bi-youtube"></i>YouTube</li>
+            </ul>
+        </section>
+    </footer>
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+nav{
+    background-color: #001C55;
+    border-bottom: solid 2px #0A2472;
+}
+
+main{
+    background-color: #00072D;
+}
+
+header{
+    height: 100vh;
+    background-image: url(./media/Cinema.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+i{
+    padding-right: 5px;
+}
+
+aside{
+    background-color: #001C55;
+    border-top: 3px solid #0A2472;
+    border-bottom: 3px solid #0A2472;    
+}
+
+
+#modal{
+    background-color: #00072D;
+    color: white;
+    border: 2px solid #001C55;
+}
+
+footer{
+    background-color: #00072D;
+}
+
+.card{
+    background-color: #001C55;
+    color: white;
+    border: #0A2472 3px solid;
+}
